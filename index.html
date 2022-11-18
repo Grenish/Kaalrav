@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <nav class="fixed header transparent scroll links text-center margin-20px">
+    <nav class="fixed header transparent scroll links text-center margin-20px" onscroll="changeOpacity()" id="navbar">
         <div class="first-division">
             <a href="">
                 <img src="/Pictures/logo_kaalrav.png" class="logo kaalrav">
@@ -52,7 +52,10 @@
         </div>
     </div>
 
-    <div class="hero videoBanner"></div>
+    <div class="hero videoBanner fontSize3_5 weight900">
+        <h2>"Live Love Dance"</h2>
+        <video src="/Pictures/sunburn.mp4" type="video/mp4" autoplay loop mute></video>
+    </div>
 
     <div class="secondParentContainer flex">
         <div class="upcomingEvents cards">
