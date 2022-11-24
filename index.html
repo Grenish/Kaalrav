@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaalrav - The New Sail</title>
     <link rel="stylesheet" href="main.css">
+
+    <!-- font awesome incons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <nav class="fixed header transparent scroll links text-center margin-20px">
+    <nav class="fixed header transparent scroll links text-center margin-20px" onscroll="changeOpacity()" id="navbar">
         <div class="first-division">
             <a href="">
                 <img src="/Pictures/logo_kaalrav.png" class="logo kaalrav">
@@ -45,21 +52,80 @@
             <div></div>
             <div></div>
             <div class="welcome fontSize3_5 uppercase flex weight900">
-                Welcome to the biggest fest
+                Get ready for the biggest fest
                 of north-east India
             </div>
             <div></div>
         </div>
     </div>
 
-    <div class="hero videoBanner"></div>
-
-    <div class="secondParentContainer flex">
-        <div class="upcomingEvents cards">
-            
-        </div>
+    <div class="hero videoBanner fontSize3_5 weight900">
+        <h2>"Live Love Dance"</h2>
+        <video src="/Pictures/sunburn.mp4" type="video/mp4" autoplay loop mute></video>
     </div>
 
-<script src="app.js"></script>
+
+    <!-- card container -->
+    <div class="secondParentContainer flex2">
+        <h2 class="EventText">Upcoming Events</h2>
+        <div class="upcomingEvents cards">
+            
+            <!-- common name for the parent div for the card is provided and so for the imgage class -->
+            <div class="justinBieber parentBeforeCard">
+                <div class="card cardBefore justin h-auto">
+                    
+                    <div class="emceeName">
+                        <i class="fa-regular fa-star"></i>
+                        <h2 class="jbtext">Justin Bieber</h2>
+                    </div>
+                    
+                    <img src="/Pictures/justin.jpg" alt="Justin Bieber" class="JB p-card">
+                </div>
+            </div>
+
+
+            <div class="charlie parentBeforeCard card h-auto">
+                <div class="cardBefore">
+
+                    <div class="emceeName">
+                        <i class="fa-regular fa-star"></i>
+                        <h2 class="jbtext">Charlie Puth</h2>
+                    </div>
+
+                    <img src="/Pictures/Charlie.jpg" alt="Charlie Puth" class="CP p-card">
+                
+                </div>
+            </div>
+
+
+            <div class="marshmello parentBeforeCard card h-auto">
+                <div class="cardBefore">
+                    <div class="emceeName">
+                        <i class="fa-regular fa-star"></i>
+                        <h2 class="jbtext">Marshmello</h2>
+                    </div>
+
+                    <img src="/Pictures/marshmello.jpg" alt="Marshmello" class="MM p-card">
+                </div>
+            </div>
+
+
+            <div class="eminem parentBeforeCard card h-auto">
+                <div class="cardBefore">
+                    <div class="emceeName">
+                        <i class="fa-regular fa-star"></i>
+                        <h2 class="jbtext">Eminem</h2>
+                    </div>
+
+                    <img src="/Pictures/eminem.jpg" alt="Eminem" class="EM p-card">
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
