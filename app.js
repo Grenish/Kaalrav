@@ -1,4 +1,4 @@
-function chaneOpacity(){
+function changeOpacity(){
     if (document.documentElement.scrollTop > 50) {
         document.getElementById("navbar").className = "nav";
     } else {
